@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tip.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <form>
+    <div class="outer">
+        <div class="heading">
+            <h1>Tip Calculator </h1>
+        </div>
+        <div class="container" id="topCon">
+            <div class="title"><label for="billAmtInput">Bill Amount</label></div>
+            <div class="inputCon">
+                <span><label for="billAmtInput"><span class="material-symbols-outlined">
+                    currency_rupee
+                    </span> </label></span>
+                <input onkeyup="calBill()" type="text" id="billAmtInput" placeholder="0.00"/>
+            </div>
+        </div>
+        <div class="container" id="midCon">
+            <div class="title"><label for="tipInput">Tip</label></div>
+            <div class="inputCon">
+                <span><label for="tipInput">% </label></span>
+                <input
+                 onkeyup="calBill()"
+                 type="text" 
+                 id="tipInput" 
+                 placeholder="10"/>
+            </div>
+        </div>
+
+        <div class="container" id="buttomCon">
+            <div class="shareConatainer">
+                <div class="title">People</div>
+                <div class="controls">
+                    <span class="btnCon">
+                        <button type="button" class="shareBtn" onclick="increasePer()">
+                            <span class="btnText">+</span>
+                        </button>
+                        <span class="shareAmt" id="noOfPeople">1</span>
+                        <span class="btnCon">
+                            <button type="button" class="shareBtn" onclick="decreasePer()">
+                                <span class="btnText">-</span>
+                            </button>
+                        </span>
+                </div>
+            </div>
+            <div class="totalCon">
+                <div class="title">Total Per Person</div>
+                <div class="total" id="totalPerPerson">Rs0.00</div>
+            </div>
+        </div>
+        <div class="reset">
+            <button onclick="resetting()" type="reset" class="btn">Reset</button>
+        </div>
+    </div>
+</form>
+    <script type="text/javascript" src="tip.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
+ 
+body{
+  background-color: rgb(123, 186, 123);
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+     margin: 10px 10px;
+     font-size: 4rem;
+      font-family: 'Roboto Slab', serif;
+}
+.outer{
+    background-color: green;
+    width: 75%;
+    height: 90vh;
+    margin: 5vh auto;
+    border-radius: 03%;
+}
+.container{
+    margin: 10px 10px;
+    width: 80%;
+    font-family: 'Noto Serif', serif;
+}
+#buttomCon{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    margin: 2vh 10px;
+    font-size: 1.5rem;
+}
+.shareConatainer{
+    display: block;
+    margin: 0px 20%;
+}
+.controls{
+    margin: 0%  5px;
+    padding: 0px 2px;
+}
+.totalCon{
+    padding: 0px 5px;
+    font-size: 2rem;
+}
+input{
+    outline: 0;
+    color: #000000;
+    width: 75%;
+    border-radius: 45px;
+    
+}
+.total{
+    padding: 5px 27px;
+}
+.shareBtn{
+    cursor: pointer;
+    background-color: #b8ae27;
+    border: 0;
+}
+.btn{
+    cursor: pointer;
+    background-color: #b8ae27;
+    border: 0;
+}
+.btn:hover{
+    background-color: #ffee02;
+}
+.shareBtn:hover{
+    background-color: #ffee02;
+}
+.reset{
+    margin: 0px 25%;
+}
+.reset button{
+    font-size: larger;
+}
+
+span{
+    font-size: 1.4rem;
+}
+h1:hover{
+    background-color: rgb(153, 246, 141);
+    border-radius: 25px;
+    cursor:pointer;
+}
+@media only screen and (max-width:600px) {
+    .shareConatainer{
+        display: block;
+        margin: 0px 0%;
+        width: 60%;
+    }
+    h1{
+        margin: 10px 10px;
+        font-size: 2rem;
+    }
+    .totalCon{
+        font-size: 1.5rem;
+    }
+    .total{
+        padding: 0px 10px;
+    }
+}
