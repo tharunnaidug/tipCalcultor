@@ -29,7 +29,7 @@ let increasePer = () => {
 let decreasePer = () => {
     // if Number Is 1 Then It returns Nothing
     if (noOfPeople <= 1) {
-        return
+        return;
     }
     noOfPeople -= 1
     noOfPeopleDiv.innerText = noOfPeople
@@ -39,6 +39,7 @@ let decreasePer = () => {
 
 function resetting() {
     noOfPeopleDiv.innerText = 1;
+    noOfPeople=1;
     //calling calBill() After The Changes
     calBill();
 }

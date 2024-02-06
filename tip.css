@@ -39,6 +39,7 @@ h1{
 .shareConatainer{
     display: block;
     margin: 0px 20%;
+    cursor: default;
 }
 .controls{
     margin: 0%  5px;
@@ -47,25 +48,29 @@ h1{
 .totalCon{
     padding: 0px 5px;
     font-size: 2rem;
+    cursor: default;
 }
 input{
     outline: 0;
     color: #000000;
     width: 75%;
-    border-radius: 45px;
-    
+    border-radius: 5px;
+    padding: 10px 4px;
+    font-weight: 600;
 }
 .total{
     padding: 5px 27px;
 }
 .shareBtn{
     cursor: pointer;
-    background-color: #b8ae27;
+    background-color: #f8eb3a;
     border: 0;
+    border-radius: 50%;
 }
 .btn{
     cursor: pointer;
-    background-color: #b8ae27;
+    background-color: #f8eb3a;
+    border-radius: 2px;
     border: 0;
 }
 .btn:hover{
@@ -85,10 +90,13 @@ span{
     font-size: 1.4rem;
 }
 h1:hover{
-    background-color: rgb(153, 246, 141);
-    border-radius: 25px;
+    background-color: rgb(59, 175, 43);
+    border-radius: 5px;
     cursor:pointer;
 }
+
+
+
 @media only screen and (max-width:600px) {
     .shareConatainer{
         display: block;
